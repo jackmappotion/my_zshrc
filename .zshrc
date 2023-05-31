@@ -11,6 +11,20 @@ alias llg='logo-ls -alD -X'
 
 ## port_check
 alias pcheck="lsof -PiTCP -sTCP:LISTEN"
+## kill port
+function killp() {
+    port=$1
+    pid=$(lsof -t -i:${port})
+    
+    if [[ -z $pid ]]; then
+        echo "Port $port is not in use. Skipping..."
+        return
+    fi
+    
+    command="kill -9 $pid"
+    eval $command
+}
+
 
 ## git
 alias gs="git status"
