@@ -9,10 +9,11 @@ alias llg='logo-ls -alD -X'
 
 # personal
 
+# personal
 ## port_check
 alias pcheck="lsof -PiTCP -sTCP:LISTEN"
 ## kill port
-function killp() {
+function pkill() {
     port=$1
     pid=$(lsof -t -i:${port})
     
@@ -25,9 +26,9 @@ function killp() {
     eval $command
 }
 
-
 ## git
 alias gs="git status"
+alias gitm="gitmoji -c"
 
 ## open app
 alias chrome="open -a 'Google Chrome'"
