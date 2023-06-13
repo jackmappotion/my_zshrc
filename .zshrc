@@ -30,15 +30,5 @@ function pkill() {
 alias gs="git status"
 alias gitm="gitmoji -c"
 
-## open app
-alias chrome="open -a 'Google Chrome'"
-
-alias kakao="open -a 'KaKaoTalk'"
-alias slack="open -a 'Slack'"
-
-alias notion="open -a 'Notion'"
-alias miro="open -a 'Miro'"
-
-alias dbeaver="open -a 'DBeaver'"
-alias intellij="open -a 'IntelliJ IDEA'"
-alias pycharm="open -a 'PyCharm'"
+## neofetch
+alias os='neofetch'
